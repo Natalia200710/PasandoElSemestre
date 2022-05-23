@@ -11,6 +11,7 @@ import javax.swing.border.Border;
 
 public class VentanaPrincipal extends JFrame{
 	private PanelTitulo panelTitulo;
+	private JLabel imagenBanner;
 	
 	public VentanaPrincipal() {
 		
@@ -27,7 +28,23 @@ public class VentanaPrincipal extends JFrame{
 	private void IniciarComponentes() {
 		panelTitulo= new PanelTitulo();	
 		
-		add(panelTitulo, BorderLayout.NORTH);		
+		add(panelTitulo, BorderLayout.NORTH);
+		imagenBanner.setIcon(new ImageIcon());
+	}
+	
+	public void imagenBanner() {
+		ImageIcon Imagen = new ImageIcon("/Imagenes/BannerTitulo.jpg");
+		JLabel Img = new JLabel(Imagen);
+		Img.setSize(30, 30);
+		add(Img, BorderLayout.NORTH); 
+	}
+	
+	public JLabel getImagenBanner() {
+		return imagenBanner;
+	}
+
+	public void setImagenBanner(JLabel imagenBanner) {
+		this.imagenBanner = imagenBanner;
 	}
 
 	public PanelTitulo getPanelTitulo() {

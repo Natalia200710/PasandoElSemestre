@@ -40,13 +40,6 @@ public class PanelTitulo extends JPanel {
 		add(tipoMusica);	
 	}
 	
-	public void imagenBanner() {
-		ImageIcon Imagen = new ImageIcon("/Imagenes/BannerTitulo.jpg");
-		JLabel Img = new JLabel(Imagen);
-		Img.setSize(120, 156);
-		add(Img); 
-	}
-	
 	public JLabel getTitulo() {
 		return titulo;
 	}
